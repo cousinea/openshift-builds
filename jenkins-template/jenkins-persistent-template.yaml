@@ -15,7 +15,7 @@ objects:
   metadata:
     name: jenkins
   spec:
-    dockerImageRepository: docker.io/library/jenkins
+    dockerImageRepository: docker.io/jenkinsci/jenkins
 - apiVersion: v1
   kind: Service
   metadata:
@@ -194,4 +194,4 @@ parameters:
   displayName: Jenkins version
   name: JENKINS_VERSION
   required: true
-  value: "2.0"
+  value: "latest"
